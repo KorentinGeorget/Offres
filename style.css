@@ -1,0 +1,85 @@
+*{
+    margin:0;
+    padding:0;
+    box-shadow: none;
+}
+
+body{
+    background-color: black;
+    width:100vw;
+    overflow-x: hidden;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 5em;
+}
+.texte{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-basis: 10em;
+    font-size: 3.5vmin;
+    color: white;
+    font-family: monospace;
+}
+.cartes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.carte{
+    background-color: white;
+    width: 25em;
+    height: 30em;
+    
+    border-radius: 1em;
+    box-shadow: 1px 1px 10px white;
+}
+
+.carte:hover{
+    scale: 1.005;
+}
+
+
+@media screen and (max-width: 1300px){
+    .carte{
+        width:20em;
+    }
+}
+
+@media screen and (max-width: 1000px){
+    .carte{
+        width:15em;
+        height: 25em;
+
+    }
+}
+
+@media screen and (max-width: 800px){
+    .carte{
+        min-width:25em;
+        width:60%;
+        height: 30em;
+    }
+    .cartes{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 3em;
+    }
+    .texte{
+        font-size: 170%;
+    }
+   
+}
